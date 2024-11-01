@@ -1,30 +1,43 @@
 ---
 
-# IRL - the singularity is here
+# CaringMind - the singularity is here
 
 ![IRL](/.github/public/7LIk_g_yRE2jVpeDe9Vxng.jpeg)
 
 # MVP Status 
-[ ] openaudiostandard
 
-[ ] full ios app
+    [ ] openaudiostandard
 
-[ ] full watch app/integration
+    [ ] mvp ios app
 
-[ ] web integrations
+    [ ] mvp watch app
 
-[ ] add. device integrations
+    [ ] add notifications
+
+    [ ] add App Intents, like Siri, Shortcuts
+
+    [ ] add WidgetsExtension - its always running - why open the app ;)
+
+    [ ] web integrations
+
+    [ ] add. device integrations
 
 ## About
 
-IRL (In Real Life) is an AI-powered project that functions as an augmented memory assistant, human interpreter, advocate, and more. This app is designed to elevate human-AI interaction by providing real-time support and insights to users in various contexts.
+# CaringMind: Your Guide to Every Moment
 
-## Features
+Step into a world where CaringMind listens, remembers, and knows just what you need, when you need it. CaringMind helps you stay on track, feel closer to friends and family, and enjoy each moment with a presence that feels almost magical. It's as if there's a guide who remembers everything important for you—always there, ready to help.
 
-- **Augmented Memory**: Helps users by storing and retrieving information as needed.
-- **Human Interpreter**: Provides contextual interpretations based on real-time input.
-- **Advocacy**: Acts as a digital advocate to assist users in navigating complex situations.
-- **AI Companion**: Serves as your personal AI assistant for various tasks.
+## What Can CaringMind Do?
+
+    **Capture Every Moment:** CaringMind holds onto the memories you want to keep, gently storing the moments and conversations you’d rather not forget.
+
+    **Know Your World:** CaringMind gets to know what makes your day better. From the biggest ideas to the tiniest details, CaringMind remembers them so you don’t have to.
+    Encourage Productivity & Play: Need a little reminder or gentle nudge? CaringMind helps you stay focused and make the most of your time. It’s like having a magical, invisible helper always ready to cheer you on.
+
+    **Stay Connected:** CaringMind feels what matters most to you—your family, friends, school, work, and goals—and quietly makes it easier to feel connected to the people and things that make you happy.
+
+With a touch of CaringMind in your pocket, staying present, productive, and connected feels natural, like a little magic working just for you. Let CaringMind take care of the background, so you can stay in the moment.
 
 ![EnhancingLife](.github/mermaid/mermaid-diagram-2024-10-11-204535.svg)
 
@@ -41,9 +54,7 @@ IRL (In Real Life) is an AI-powered project that functions as an augmented memor
 ### app overall flow
 ![AppFlow](/.github/mermaid/mermaid-diagram-2024-10-11-203323.svg)
 
-### ios-local audio handling
-![AudioState](/.github/mermaid/audiostate-mermaid-diagram-2024-10-15-234903.svg)
-## Contributing
+# Contributing
 
 We welcome contributions! Feel free to submit issues or pull requests to help improve the project.
 

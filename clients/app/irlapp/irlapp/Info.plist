@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.799823995349-oucdmcqsvk8qcfuqvj9g8e9nniu2742v</string>
+			</array>
+		</dict>
+	</array>
+	<key>GIDClientID</key>
+	<string>799823995349-oucdmcqsvk8qcfuqvj9g8e9nniu2742v.apps.googleusercontent.com</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-peripheral</string>
+		<string>audio</string>
+		<string>fetch</string>
+		<string>processing</string>
+		<string>external-accessory</string>
+		<string>location</string>
+		<string>push-to-talk</string>
+		<string>remote-notification</string>
+		<string>bluetooth-central</string>
+		<string>nearby-interaction</string>
+		<string>voip</string>
+	</array>
+</dict>
+</plist>

@@ -18,7 +18,7 @@ class DirectoryEnum(str, Enum):
 DIRECTORY_PATHS = {
     DirectoryEnum.backend: ['/Users/ebowwa/irl/backend'], # /workspace/irl/backend'
     DirectoryEnum.app: ['/Users/ebowwa/irl/app'], # '/workspace/irl/app'
-    DirectoryEnum.openaudiostandard: ['/Users/ebowwa/irl/app/IRL/openaudiostandard'] # '/workspace/irl/app/IRL/openaudiostandard'
+    DirectoryEnum.openaudiostandard: ['/Users/ebowwa/irl/clients/app/irlapp/Sources/OpenAudio'] # '/workspace/irl/app/IRL/openaudiostandard'
 }
 
 # Function to concatenate files in the directory

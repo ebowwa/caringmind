@@ -1,9 +1,12 @@
 # File: backend/index.py **DO NOT OMIT ANYTHING FROM THE FOLLOWING CONTENT, INCLUDING & NOT LIMITED TO COMMENTED NOTES
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.openapi.docs import get_swagger_ui_html  # Import Swagger UI
-from route.dev import ping
+from fastapi.exceptions import RequestValidationError
+from fastapi.responses import JSONResponse
+import logging
+from route.dev import socket_ping
 from route.socket import whisper_tts
 from route.post.text.llm_inference.claude import router as claude_router
 from route.humeclient import router as hume_router
@@ -19,6 +22,7 @@ from route.post.text.chatgpt_share.index import router as share_oai_chats_router
 from route.gemini_flash_series.gemini_index import router as gemini_router
 # from route.post.media.upload.Index import router as media_router unneeded
 from services.gemini_socket import router as gemini_socket_router
+from route.features.user_name_upload import router as user_name_upload_router
 from route.dev.cat_dir import router as cat_directory_router
 from utils.ngrok_utils import start_ngrok 
 import ngrok 
@@ -60,7 +64,7 @@ app.add_middleware(
 # ------------------ API Routes -------------------------------------
 
 # Socket-based routes (ping, whisper-tts)
-app.include_router(ping.router)  # Ping route for WebSocket health check
+app.include_router(socket_ping.router)  # Ping route for WebSocket health check
 
 app.include_router(whisper_tts.router)  # Whisper TTS WebSocket route
 
@@ -97,6 +101,8 @@ app.include_router(gemini_socket_router, prefix="/api/gemini")
 
 app.include_router(cat_directory_router) # **ONLY IF DEV IS SET otherwise high safety concerns**
 
+app.include_router(user_name_upload_router)
+
 # ------------------ OpenAPI & Swagger UI ---------------------------
 # Serve the OpenAPI schema separately
 @app.get("/openapi.json", include_in_schema=False)
@@ -111,6 +117,7 @@ async def custom_swagger_ui():
         title="IRL Backend Service API Docs",
         swagger_favicon_url="https://fastapi.tiangolo.com/img/favicon.png"  # Optional custom favicon
     )
+
 
 # ------------------ Main Program Entry Point -----------------------
 if __name__ == "__main__":

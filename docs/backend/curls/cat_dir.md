@@ -75,9 +75,10 @@ This endpoint allows users to specify a custom directory path. It works similarl
 - **Example Request**:
 
 ```bash
-curl -X POST "https://4d9b-76-78-246-141.ngrok-free.app/concatenate/custom" \
+curl -X POST "https://95b6-50-247-127-70.ngrok-free.app/concatenate/custom" \
 -H "Content-Type: application/json" \
--d '{"directory_path": "/Users/ebowwa/irl/app/openaudiostandard"}'
+-d '{"directory_path": "/Users/ebowwa/irl/clients/irlap
+p/Sources/OpenAudio"}'
 ```
 
 - **Example Response**:
@@ -158,7 +159,7 @@ Here are the `curl` commands with the `-o` flag added to save the response into 
 ### 1. **Concatenate Files from Predefined Directories** and save to `output_predefined.json`:
 
 ```bash
-curl -X POST "https://4d9b-76-78-246-141.ngrok-free.app/concatenate" \
+curl -X POST "https://95b6-50-247-127-70.ngrok-free.app/concatenate" \
 -H "Content-Type: application/json" \
 -d '{"directory": "openaudiostandard"}' \
 -o output_predefined.json
@@ -167,9 +168,9 @@ curl -X POST "https://4d9b-76-78-246-141.ngrok-free.app/concatenate" \
 ### 2. **Concatenate Files from a Custom Directory Path** and save to `output_custom.json`:
 
 ```bash
-curl -X POST "https://8beb-50-247-127-70.ngrok-free.app/concatenate/custom" \
+curl -X POST "https://95b6-50-247-127-70.ngrok-free.app/concatenate/custom" \
 -H "Content-Type: application/json" \
--d '{"directory_path": "/Users/ebowwa/irl/app/IRL/openaudiostandard"}' \
+-d '{"directory_path": "/Users/ebowwa/irl/clients/app/irlapp/Sources/OpenAudio"}' \
 -o output_custom.json
 ```
 

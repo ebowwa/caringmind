@@ -1888,3 +1888,15 @@ output_custom.json
 /@depreciated/
 '/Users/ebowwa/irl/@depreciated'
 irl/@depreciated
+app/IRL/IRL.xcodeproj
+app/IRL/IRL.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+clients/app/IRL/.swiftpm
+.DS_Store
+/.build
+/Packages
+xcuserdata/
+DerivedData/
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.netrc
+.vscode
