@@ -1,4 +1,3 @@
-/**
 //  Onboarding.swift
 //  irlapp
 // - the user name will pivot from a text input to a user speech
@@ -362,5 +361,3 @@ class OnboardingViewModel: ObservableObject {
     }
 }
 
-
-*/

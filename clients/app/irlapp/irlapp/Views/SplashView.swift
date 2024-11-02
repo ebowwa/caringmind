@@ -1,4 +1,4 @@
-/** //
+//
 //  SplashView.swift
 //  CaringMind
 //
@@ -105,4 +105,4 @@ struct SplashBackgroundGradientView: View {
             .edgesIgnoringSafeArea(.all)
     }
 }
-*/
+
